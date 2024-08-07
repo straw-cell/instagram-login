@@ -1,0 +1,25 @@
+:root {
+  --color1: #9E63DE;
+  --color2: #CA73A8;
+  --color3: #FAF5FC;
+  --content-width: 1200px;
+}
+
+*, *::after, *::before {
+  margin: 0px;
+  padding: 0px;
+  box-sizing: border-box;
+  font-family: sans-serif;
+  text-decoration: none;
+  color: black;
+}
+
+/*footer*/
+footer {
+  width: 100%;
+}
+footer .container {
+  max-width: var(--content-width);
+  margin: auto;
+  height: 100%;
+}/*# sourceMappingURL=ig.css.map */
