@@ -66,9 +66,88 @@ section .left {
 section .right {
   height: 100%;
   width: 50%;
-  background-color: #9e63de;
   display: flex;
   justify-content: center;
   align-items: center;
   flex-direction: column;
+  padding: 0px 10px;
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
+}
+section .right .form-box {
+  width: 100%;
+  border: 1px solid rgba(0, 0, 0, 0.254);
+  height: 100%;
+  padding: 20px 10px;
+}
+section .right .form-box form {
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+}
+section .right .form-box form .input-box {
+  border: 1px solid rgba(0, 0, 0, 0.254);
+  height: 40px;
+  position: relative;
+  background: rgb(250, 250, 250);
+  border-radius: 5px;
+}
+section .right .form-box form .input-box p {
+  color: grey;
+  position: absolute;
+  top: 50%;
+  transform: translateY(-50%);
+  left: 10px;
+  transition: all 0.5s ease-out;
+}
+section .right .form-box form .input-box input {
+  position: absolute;
+  height: 100%;
+  background: transparent;
+  border: none;
+  outline: none;
+  left: 10px;
+  width: 100%;
+  width: calc(100% - 20px);
+  transition: all 0.5s ease-out;
+}
+section .right .form-box form .input-box button {
+  background: none;
+  border: none;
+  height: 100%;
+  position: absolute;
+  right: 10px;
+  width: 50px;
+}
+section .right .form-box form .input-box.password input {
+  width: 80%;
+}
+section .right .form-box form .input-box.active p {
+  font-size: 10px;
+  top: 25%;
+}
+section .right .form-box form .input-box.active input {
+  top: 30%;
+  height: calc(100% - 70px);
+}
+section .right .form-box form .input-box.active button {
+  display: block;
+}
+section .right .form-box form button.login {
+  margin: 8px 0px;
+  width: 100%;
+  padding: 8px 0px;
+  border-radius: 8px;
+  border: none;
+  background: rgb(0, 119, 255);
+  color: white;
+}
+section .right .signup-box {
+  border: 1px solid rgba(0, 0, 0, 0.254);
+  width: 100%;
+  padding: 20px 10px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
 }/*# sourceMappingURL=ig.css.map */
