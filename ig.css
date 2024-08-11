@@ -58,12 +58,14 @@ section .container {
   align-items: center;
   margin: auto;
 }
-section .left {
+section .container .left {
   height: 100%;
   width: 50%;
-  background-color: #ca73a8;
+  background: url("./img/ineer-img.png");
+  background-repeat: no-repeat;
+  background-size: contain;
 }
-section .right {
+section .container .right {
   height: 100%;
   width: 50%;
   display: flex;
@@ -75,7 +77,7 @@ section .right {
   flex-direction: column;
   gap: 20px;
 }
-section .right .form-box {
+section .container .right .form-box {
   width: 100%;
   border: 1px solid rgba(0, 0, 0, 0.254);
   height: 100%;
@@ -85,23 +87,23 @@ section .right .form-box {
   align-items: center;
   justify-content: center;
 }
-section .right .form-box img {
+section .container .right .form-box img {
   margin-bottom: 30px;
 }
-section .right .form-box form {
+section .container .right .form-box form {
   display: flex;
   flex-direction: column;
   gap: 10px;
   width: 100%;
 }
-section .right .form-box form .input-box {
+section .container .right .form-box form .input-box {
   border: 1px solid rgba(0, 0, 0, 0.254);
   height: 40px;
   position: relative;
   background: rgb(250, 250, 250);
   border-radius: 5px;
 }
-section .right .form-box form .input-box p {
+section .container .right .form-box form .input-box p {
   color: grey;
   position: absolute;
   top: 50%;
@@ -109,7 +111,7 @@ section .right .form-box form .input-box p {
   left: 10px;
   transition: all 0.5s ease-out;
 }
-section .right .form-box form .input-box input {
+section .container .right .form-box form .input-box input {
   position: absolute;
   height: 100%;
   background: transparent;
@@ -120,7 +122,7 @@ section .right .form-box form .input-box input {
   width: calc(100% - 20px);
   transition: all 0.5s ease-out;
 }
-section .right .form-box form .input-box button {
+section .container .right .form-box form .input-box button {
   background: none;
   border: none;
   height: 100%;
@@ -128,21 +130,21 @@ section .right .form-box form .input-box button {
   right: 10px;
   width: 50px;
 }
-section .right .form-box form .input-box.password input {
+section .container .right .form-box form .input-box.password input {
   width: 80%;
 }
-section .right .form-box form .input-box.active p {
+section .container .right .form-box form .input-box.active p {
   font-size: 10px;
   top: 25%;
 }
-section .right .form-box form .input-box.active input {
+section .container .right .form-box form .input-box.active input {
   top: 30%;
   height: calc(100% - 70px);
 }
-section .right .form-box form .input-box.active button {
+section .container .right .form-box form .input-box.active button {
   display: block;
 }
-section .right .form-box form button.login {
+section .container .right .form-box form button.login {
   margin: 8px 0px;
   width: 100%;
   padding: 8px 0px;
@@ -151,44 +153,44 @@ section .right .form-box form button.login {
   background: rgb(0, 119, 255);
   color: white;
 }
-section .right .form-box .or-box {
+section .container .right .form-box .or-box {
   width: 100%;
   display: flex;
   align-items: center;
   gap: 20px;
 }
-section .right .form-box .or-box .line {
+section .container .right .form-box .or-box .line {
   height: 1px;
   width: 100%;
   background-color: #dbdbdb;
 }
-section .right .form-box .or-box p {
+section .container .right .form-box .or-box p {
   opacity: 0.5;
   font-size: 13px;
   font-weight: 600;
 }
-section .right .form-box a.fb-logo {
+section .container .right .form-box a.fb-logo {
   display: flex;
   justify-content: center;
   align-items: center;
   margin: 20px 0;
   gap: 10px;
 }
-section .right .form-box a.fb-logo p {
+section .container .right .form-box a.fb-logo p {
   color: #385185;
   font-size: 14px;
   font-weight: 600;
 }
-section .right .form-box .line-3 {
+section .container .right .form-box .line-3 {
   display: flex;
   justify-content: center;
   align-items: center;
 }
-section .right .form-box .line-3 a {
+section .container .right .form-box .line-3 a {
   color: #385185;
   font-size: 12px;
 }
-section .right .signup-box {
+section .container .right .signup-box {
   border: 1px solid rgba(0, 0, 0, 0.254);
   width: 100%;
   padding: 20px 10px;
@@ -196,10 +198,10 @@ section .right .signup-box {
   align-items: center;
   justify-content: center;
 }
-section .right .signup-box a {
+section .container .right .signup-box a {
   color: #0095f6;
 }
-section .right .app {
+section .container .right .app {
   display: flex;
   align-items: center;
   justify-content: center;
@@ -207,7 +209,7 @@ section .right .app {
   flex-direction: column;
   gap: 15px;
 }
-section .right .app .images {
+section .container .right .app .images {
   display: flex;
   gap: 15px;
 }/*# sourceMappingURL=ig.css.map */

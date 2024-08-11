@@ -65,13 +65,14 @@ section {
   justify-content: center;
   align-items: center;
   margin:auto;
-  }
+
   .left{
     height:100%;
     width:50%;
     background: url("./img/ineer-img.png") ;
     background-repeat: no-repeat; 
      background-size: contain;
+    }
      
 
   .right{
@@ -274,4 +275,6 @@ section {
        }
 
   }
+  }
+
 }
