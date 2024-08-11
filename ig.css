@@ -143,6 +143,22 @@ section .right .form-box form button.login {
   background: rgb(0, 119, 255);
   color: white;
 }
+section .right .form-box .or-box {
+  width: 100%;
+  display: flex;
+  align-items: center;
+  gap: 20px;
+}
+section .right .form-box .or-box .line {
+  height: 1px;
+  width: 100%;
+  background-color: #dbdbdb;
+}
+section .right .form-box .or-box p {
+  opacity: 0.5;
+  font-size: 13px;
+  font-weight: 600;
+}
 section .right .signup-box {
   border: 1px solid rgba(0, 0, 0, 0.254);
   width: 100%;

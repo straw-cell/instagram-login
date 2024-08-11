@@ -78,7 +78,7 @@ section {
   
     display:flex;
     justify-content: center;
-    align-items: center;
+    align-items: center;  
     flex-direction: column;
     padding: 0px 10px;
     display: flex;
@@ -183,6 +183,23 @@ section {
 
         }
 
+      }
+      .or-box{
+        width:100%;
+        display: flex;
+        align-items: center;
+        gap:20px;
+
+        .line{
+            height: 1px;
+            width: 100%;
+            background-color:#dbdbdb;
+        }
+        p{
+           opacity: 0.5;
+            font-size: 13px;
+            font-weight: 600;
+        }
       }
 
 
