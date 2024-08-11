@@ -80,11 +80,19 @@ section .right .form-box {
   border: 1px solid rgba(0, 0, 0, 0.254);
   height: 100%;
   padding: 20px 10px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+}
+section .right .form-box img {
+  margin-bottom: 30px;
 }
 section .right .form-box form {
   display: flex;
   flex-direction: column;
   gap: 10px;
+  width: 100%;
 }
 section .right .form-box form .input-box {
   border: 1px solid rgba(0, 0, 0, 0.254);
@@ -159,6 +167,27 @@ section .right .form-box .or-box p {
   font-size: 13px;
   font-weight: 600;
 }
+section .right .form-box a.fb-logo {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin: 20px 0;
+  gap: 10px;
+}
+section .right .form-box a.fb-logo p {
+  color: #385185;
+  font-size: 14px;
+  font-weight: 600;
+}
+section .right .form-box .line-3 {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+section .right .form-box .line-3 a {
+  color: #385185;
+  font-size: 12px;
+}
 section .right .signup-box {
   border: 1px solid rgba(0, 0, 0, 0.254);
   width: 100%;
@@ -166,4 +195,19 @@ section .right .signup-box {
   display: flex;
   align-items: center;
   justify-content: center;
+}
+section .right .signup-box a {
+  color: #0095f6;
+}
+section .right .app {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 100%;
+  flex-direction: column;
+  gap: 15px;
+}
+section .right .app .images {
+  display: flex;
+  gap: 15px;
 }/*# sourceMappingURL=ig.css.map */

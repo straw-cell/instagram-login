@@ -1,122 +1,110 @@
 <!DOCTYPE html>
 <html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>login-page</title>
+    <link rel="stylesheet" link href="./ig.css" />
+  </head>
 
-<head>
-  <meta charset="UTF-8" />
-  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-  <title>login-page</title>
-  <link rel="stylesheet" link href="./ig.css" />
-</head>
+  <body>
+    <section>
+      <div class="container">
+        <div class="left">
+       
+       <!--<img src="./img/ineer-img.png">-->
+        </div>
+        <div class="right">
+          <div class="form-box">
+            <img src="./img/logo.png" width="200px" />
+            <form>
+              <div class="input-box">
+                <p>Phone Number, Username, Email</p>
+                <input type="text" />
+              </div>
+              <div class="input-box password">
+                <p>Password</p>
+                <input type="password" />
 
-<body>
-  <section>
+                <button id="showpass">show</button>
+              </div>
 
-    <div class="container">
-      <div class="left"></div>
-      <div class="right">
-        <div class="form-box">
-          <img src="./img/logo.png" width="300px">
-          <form>
-            <div class="input-box ">
-              <p>Phone Number, Username, Email</p>
-              <input type="text">
-
+              <button class="login">Log In</button>
+            </form>
+            <div class="or-box">
+              <div class="line"></div>
+              <p>OR</p>
+              <div class="line"></div>
             </div>
-            <div class="input-box password ">
-              <p>Password</p>
-              <input type="password">
-
-              <button id="showpass" >show</button>
-
+            <a href="#" class="fb-logo">
+              <img src="./img/fb.png" height="20px" />
+              <p>Login with facebook</p>
+            </a>
+            <div class="line-3">
+              <a href="#">Forgot Password?</a>
             </div>
-
-            <button class="login">
-              Log In
-            </button>
-          </form>
-          <div class="or-box">
-            <div class="line"></div>
-            <p>OR</p>
-            <div class="line"></div>
           </div>
-          <div class="logo"></div>
-          <img src="">
-          <p> Login with facebook</p>
+
+          <div class="signup-box">
+            <p>Don`t have an account ? <a href="#">Sign Up</a></p>
+          </div>
+
+          <div class="app">
+            <p>Get the app</p>
+            <div class="images">
+              <img src="./img/google play.png" height="40px" />
+
+              <img src="./img/apple.png" height="40px" />
+            </div>
+          </div>
         </div>
-
-        <div class="signup-box">
-          <p>Don`t have an account ? <a href="#">Sign Up</a> </p>
+      </div>
+    </section>
+    <footer>
+      <div class="container">
+        <div class="first-row">
+          <a herf="#" class="underline">Meta </a>
+          <a herf="#" class="underline">About </a>
+          <a herf="#" class="underline">Blogs </a>
+          <a herf="#" class="underline">Jobs </a>
+          <a herf="#" class="underline">Help </a>
+          <a herf="#" class="underline">API </a>
+          <a herf="#">Privacy </a>
+          <a herf="#">Terms </a>
+          <a herf="#">Location </a>
+          <a herf="#">Instagram Lite </a>
+          <a herf="#" class="underline">Threads </a>
+          <a herf="#">Contact Uploading & Non-users </a>
+          <a herf="#">Meta verified </a>
         </div>
-
-
+        <div class="second-row">
+          <a href="#"> English</a>
+          <a href="#"> © 2024 Instagram from Meta</a>
+        </div>
       </div>
-    </div>
+    </footer>
 
-  </section>
-  <footer>
-    <div class="container">
-      <div class="first-row">
-        <a herf="#" class="underline">Meta </a>
-        <a herf="#" class="underline">About </a>
-        <a herf="#" class="underline">Blogs </a>
-        <a herf="#" class="underline">Jobs </a>
-        <a herf="#" class="underline">Help </a>
-        <a herf="#" class="underline">API </a>
-        <a herf="#">Privacy </a>
-        <a herf="#">Terms </a>
-        <a herf="#">Location </a>
-        <a herf="#">Instagram Lite </a>
-        <a herf="#" class="underline">Threads </a>
-        <a herf="#">Contact Uploading & Non-users </a>
-        <a herf="#">Meta verified </a>
-      </div>
-      <div class="second-row">
-        <a href="#"> English</a>
-        <a href="#"> © 2024 Instagram from Meta</a>
-      </div>
-    </div>
-  </footer>
+    <!-- js code starts here -->
 
-  <!-- js code starts here -->
+    <script>
+      // Select all input elements
+      var inputs = document.querySelectorAll(".input-box input");
 
+      // Define the function to add the "active" class
+      function makeActive(event) {
+        event.target.parentElement.classList.add("active");
+      }
 
+      // Define the function to remove the "active" class
+      function makeInActive(event) {
+        event.target.parentElement.classList.remove("active");
+      }
 
-  <script>
-
-
-    // Select all input elements
-    var inputs = document.querySelectorAll(".input-box input");
-
-    // Define the function to add the "active" class
-    function makeActive(event) {
-      event.target.parentElement.classList.add("active");
-    }
-
-    // Define the function to remove the "active" class
-    function makeInActive(event) {
-      event.target.parentElement.classList.remove("active");
-    }
-
-    // Loop through each input and add the event listeners
-    inputs.forEach(function (input) {
-      input.addEventListener("focus", makeActive);   // Add class when input is focused
-      input.addEventListener("blur", makeInActive);  // Remove class when input loses focus
-    });
-
-
-
-
-  </script>
-
-
-
-
-
-
-
-
-
-
-</body>
-
+      // Loop through each input and add the event listeners
+      inputs.forEach(function (input) {
+        input.addEventListener("focus", makeActive); // Add class when input is focused
+        input.addEventListener("blur", makeInActive); // Remove class when input loses focus
+      });
+    </script>
+  </body>
 </html>
