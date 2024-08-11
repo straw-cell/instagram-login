@@ -2,7 +2,7 @@
   --color1: #9e63de;
   --color2: #ca73a8;
   --color3: #faf5fc;
-  --content-width: 1200px;
+  --content-width: 1000px;
 }
 
 *,
@@ -60,14 +60,32 @@ section .container {
 }
 section .container .left {
   height: 100%;
-  width: 50%;
-  background: url("./img/ineer-img.png");
-  background-repeat: no-repeat;
+  width: 55%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+section .container .left .img-box {
+  height: 100%;
+  aspect-ratio: 465/635;
+  background: url("./img//outer-img.png");
+  background-size: contain !important;
+  background-position: center center !important;
+  background-repeat: no-repeat !important;
+  position: relative;
+}
+section .container .left .img-box .img-inner {
+  background: url("./img/ineer-img2.png");
   background-size: contain;
+  position: absolute;
+  width: 240px;
+  aspect-ratio: 25/54;
+  right: 58px;
+  top: 50px;
 }
 section .container .right {
-  height: 100%;
-  width: 50%;
+  height: 85%;
+  width: 45%;
   display: flex;
   justify-content: center;
   align-items: center;
@@ -212,4 +230,13 @@ section .container .right .app {
 section .container .right .app .images {
   display: flex;
   gap: 15px;
+}
+
+@media only screen and (max-width: 1000px) {
+  section .container .left {
+    display: none;
+  }
+  section .container .right {
+    width: 350px !important;
+  }
 }/*# sourceMappingURL=ig.css.map */
